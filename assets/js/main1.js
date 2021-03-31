@@ -339,7 +339,7 @@ $(window).scroll(function () {
     let chapterSplit = document.querySelectorAll(".chapter > span");
     for (let i = 0; i < chapter.length; i++) {
         if (chapter[i].getBoundingClientRect().left - window.innerWidth / 2 <= 0) {
-            let ch = chapterSplit[i].childNodes;
+            let ch = chapterSplit[i].childNodes("span");
             let tl_ch = gsap.timeline();
             tl_ch.to(chapter[i], {
                 duration: 0.5,
