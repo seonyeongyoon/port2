@@ -1,3 +1,31 @@
+//글짜 쪼개기
+let jsTit = document.querySelectorAll(".js-tit");
+let sec3Tit = document.querySelectorAll("#section3 h4");
+let ch1 = document.querySelectorAll(".chapter.ch1 > p");
+document.querySelector(".chapter.ch2 > p").classList.add("split");
+document.querySelector(".chapter.ch5 > p").classList.add("split");
+document.querySelector(".chapter.ch6 > p").classList.add("split");
+document.querySelector(".chapter.ch7 > p").classList.add("split");
+document.querySelector(".chapter.ch10 > p").classList.add("split");
+for (let i = 0; i < ch1.length; i++) {
+    ch1[i].classList.add('split');
+}
+for (let i = 0; i < jsTit.length; i++) {
+    jsTit[i].classList.add('split');
+}
+for (let i = 0; i < sec3Tit.length; i++) {
+    sec3Tit[i].classList.add('split');
+}
+document.querySelectorAll(".split").forEach(elem => {
+    let splitText = elem.innerText;
+    let splitWrap = splitText.split("").join("</span><span aria-hidden:'true'>");
+    splitWrap = "<span aria-hidden:'true'>" + splitWrap + "</span>";
+
+    elem.innerHTML = splitWrap;
+    elem.setAttribute("aria-label", splitText);
+});
+
+
 //loading
 function loading() {
     const progress = $(".progress"),
@@ -33,13 +61,13 @@ function loading() {
                     duration: 0.3,
                     opacity: 1
                 });
-                tl.to(".ch1 > span", {
-                    duration: 0.6,
+                tl.to(".ch1 > p span", {
+                    duration: 0.4,
                     opacity: 1,
                     y: 0,
                     stagger: 0.1,
                     ease: Power0.easeOut
-                });
+                })
                 tl.to(".sec1-1 nav.gnb", {
                     duration: 0.5,
                     opacity: 1,
@@ -159,32 +187,7 @@ const supahscroll = new SupahScroll({
 })
 
 
-//글짜 쪼개기
-let jsTit = document.querySelectorAll(".js-tit");
-let sec3Tit = document.querySelectorAll("#section3 h4");
-let ch1 = document.querySelectorAll(".chapter.ch1 > p");
-document.querySelector(".chapter.ch2 > p").classList.add("split");
-document.querySelector(".chapter.ch5 > p").classList.add("split");
-document.querySelector(".chapter.ch6 > p").classList.add("split");
-document.querySelector(".chapter.ch7 > p").classList.add("split");
-document.querySelector(".chapter.ch10 > p").classList.add("split");
-for (let i = 0; i < ch1.length; i++) {
-    ch1[i].classList.add('split');
-}
-for (let i = 0; i < jsTit.length; i++) {
-    jsTit[i].classList.add('split');
-}
-for (let i = 0; i < sec3Tit.length; i++) {
-    sec3Tit[i].classList.add('split');
-}
-document.querySelectorAll(".split").forEach(elem => {
-    let splitText = elem.innerText;
-    let splitWrap = splitText.split("").join("</span><span aria-hidden:'true'>");
-    splitWrap = "<span aria-hidden:'true'>" + splitWrap + "</span>";
 
-    elem.innerHTML = splitWrap;
-    elem.setAttribute("aria-label", splitText);
-});
 
 
 /* 가로 스크롤, 스크롤 애니메이션 */
