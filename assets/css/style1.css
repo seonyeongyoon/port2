@@ -1518,8 +1518,8 @@ section {
     margin-right: 50px;
     padding-bottom: 10px;
 }
-.sec10-2 > .address li:nth-child(2),
-.address li:nth-child(3) {
+.sec10-2 > .address li:nth-child(2)::after,
+.address li:nth-child(3)::after {
     position: absolute;
     content: '';
     height: 1px;
