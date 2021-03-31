@@ -162,12 +162,12 @@ const supahscroll = new SupahScroll({
 //글짜 쪼개기
 let jsTit = document.querySelectorAll(".js-tit");
 let sec3Tit = document.querySelectorAll("#section3 h4");
-document.querySelector(".chapter.ch1 span").classList.add("split");
-document.querySelector(".chapter.ch2 span").classList.add("split");
-document.querySelector(".chapter.ch5 span").classList.add("split");
-document.querySelector(".chapter.ch6 span").classList.add("split");
-document.querySelector(".chapter.ch7 span").classList.add("split");
-document.querySelector(".chapter.ch10 span").classList.add("split");
+document.querySelector(".chapter.ch1 > span").classList.add("split");
+document.querySelector(".chapter.ch2 > span").classList.add("split");
+document.querySelector(".chapter.ch5 > span").classList.add("split");
+document.querySelector(".chapter.ch6 > span").classList.add("split");
+document.querySelector(".chapter.ch7 > span").classList.add("split");
+document.querySelector(".chapter.ch10 > span").classList.add("split");
 for (let i = 0; i < jsTit.length; i++) {
     jsTit[i].classList.add('split');
 }
@@ -336,9 +336,10 @@ $(window).scroll(function () {
         })
     }
     let chapter = document.querySelectorAll(".chapter");
+    let chapterSplit = document.querySelectorAll(".chapter > span");
     for (let i = 0; i < chapter.length; i++) {
         if (chapter[i].getBoundingClientRect().left - window.innerWidth / 2 <= 0) {
-            let ch = chapter[i].childNodes;
+            let ch = chapterSplit[i].childNodes;
             let tl_ch = gsap.timeline();
             tl_ch.to(chapter[i], {
                 duration: 0.5,
