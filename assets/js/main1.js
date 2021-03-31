@@ -351,7 +351,7 @@ $(window).scroll(function () {
                 duration: 0.3,
                 opacity: 1,
             })
-            tl_ch.to(ch, {
+            tl_ch.to(chapterSplit[i] "+ span" , {
                 duration: 0.4,
                 opacity: 1,
                 y: 0,
