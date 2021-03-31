@@ -242,6 +242,7 @@ section {
 }
 
 #section10 {
+    position: relative;
     background: white;
     width: 170vh;
     display: flex;
