@@ -61,7 +61,7 @@ function loading() {
                     duration: 0.3,
                     opacity: 1
                 });
-                tl.to(".chapter > p span", {
+                tl.to(".chapter.ch1 > p span", {
                     duration: 0.4,
                     opacity: 1,
                     y: 0,
@@ -348,17 +348,16 @@ $(window).scroll(function () {
             let ch = chapterSplit[i].childNodes;
             let tl_ch = gsap.timeline();
             tl_ch.to(chapter[i], {
-                duration: 0.5,
+                duration: 0.3,
                 opacity: 1,
             })
             tl_ch.to(ch, {
-                duration: 0.6,
+                duration: 0.4,
                 opacity: 1,
                 y: 0,
                 stagger: 0.1,
                 ease: Power0.easeOut
             })
-
         }
     }
     // animation animation
