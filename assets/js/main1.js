@@ -162,12 +162,15 @@ const supahscroll = new SupahScroll({
 //글짜 쪼개기
 let jsTit = document.querySelectorAll(".js-tit");
 let sec3Tit = document.querySelectorAll("#section3 h4");
-document.querySelector(".chapter.ch1 > p").classList.add("split");
+let ch1 = document.querySelectorAll(".chapter.ch1 > p");
 document.querySelector(".chapter.ch2 > p").classList.add("split");
 document.querySelector(".chapter.ch5 > p").classList.add("split");
 document.querySelector(".chapter.ch6 > p").classList.add("split");
 document.querySelector(".chapter.ch7 > p").classList.add("split");
 document.querySelector(".chapter.ch10 > p").classList.add("split");
+for (let i = 0; i < ch1.length; i++) {
+    ch1[i].classList.add('split');
+}
 for (let i = 0; i < jsTit.length; i++) {
     jsTit[i].classList.add('split');
 }
