@@ -1510,14 +1510,24 @@ section {
 
 .sec10-2 > .address li:nth-child(2),
 .address li:nth-child(3) {
-    border-bottom: 1px solid #333;
+    position: relative;
     font-size: 2.6vh;
     display: inline-block;
     padding-bottom: 1vh;
     margin-bottom: 2vh;
     margin-right: 50px;
+    padding-bottom: 10px;
 }
-
+.sec10-2 > .address li:nth-child(2),
+.address li:nth-child(3) {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #333;
+    left: 0;
+    bottom: 0;
+}
 .sec10-2 fieldset {
     display: flex;
     flex-direction: column;
