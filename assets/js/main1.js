@@ -166,6 +166,7 @@ let sec3Tit = document.querySelectorAll("#section3 h4");
 document.querySelector(".chapter.ch1 span").classList.add("split");
 document.querySelector(".chapter.ch2 span").classList.add("split");
 document.querySelector(".chapter.ch5 span").classList.add("split");
+document.querySelector(".chapter.ch6 span").classList.add("split");
 document.querySelector(".chapter.ch7 span").classList.add("split");
 document.querySelector(".chapter.ch10 span").classList.add("split");
 for (let i = 0; i < jsTit.length; i++) {
