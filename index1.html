@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="author" content="윤선영">
+    <meta name="description" content="포트폴리오">
+    <meta name="keywords" content="포트폴리오, 웹퍼블리셔, 프론트엔드개발자, HTML5">
+    <title>Portfolio</title>
+
+    <!-- 문서 형식 -->
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="stylesheet" href="assets/css/prism.css">
+
+    <!-- WEB FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading -->
+    <div class="progress">
+        <div class="container">
+            <div class="spinner">
+                <div class="layer shape">
+                    <svg id="hourglass-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+                        <path id="hourglass" fill="#333" d="M28,29.5H27.48187c-0.15094-4.45642-2.2868-8.19421-5.201-9.5,2.91425-1.30591,5.05-5.04395,5.201-9.5H28a0.5,0.5,0,0,0,0-1H12a0.5,0.5,0,0,0,0,1h0.51813c0.151,4.45605,2.2868,8.19409,5.201,9.5-2.91425,1.30579-5.05011,5.04358-5.201,9.5H12a0.5,0.5,0,0,0,0,1H28A0.5,0.5,0,0,0,28,29.5Zm-14.49121-19H26.49121c-0.17871,5.00684-3.02148,9-6.49121,9C16.53076,19.5,13.6875,15.50684,13.50879,10.5Zm0,19c0.17871-5.00684,3.022-9,6.49121-9,3.46973,0,6.3125,3.99316,6.49121,9H13.50879Z" />
+                    </svg>
+                </div>
+                <div class="layer sand1">
+                    <svg id="hourglass-fill-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+                        <path id="sand" style="fill:#333" d="M27.10156,26.6377a0.49993,0.49993,0,0,0-.35742-0.36621,30.87381,30.87381,0,0,0-13.48828,0,0.50052,0.50052,0,0,0-.35791.36621A14.42117,14.42117,0,0,0,12.5,30a0.49971,0.49971,0,0,0,.5.5H27a0.49971,0.49971,0,0,0,.5-0.5A14.38327,14.38327,0,0,0,27.10156,26.6377Z" />
+                    </svg>
+
+                </div>
+                <div class="layer sand2">
+                    <svg class="art" id="hourglass-fill-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+                        <path id="sand" style="fill:#333" d="M12.89844,13.3623a0.49993,0.49993,0,0,0,.35742.36621,30.87381,30.87381,0,0,0,13.48828,0,0.50052,0.50052,0,0,0,.35791-0.36621A14.42117,14.42117,0,0,0,27.5,10,0.49971,0.49971,0,0,0,27,9.5H13a0.49971,0.49971,0,0,0-.5.5A14.38327,14.38327,0,0,0,12.89844,13.3623Z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="progress-text">0%</div>
+    </div>
+    <!-- //loading -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <main id="contents">
+        <section id="section1">
+            <div class="sec1-1">
+                <div class="chapter ch1">
+                    <span>作品集</span>
+                    <span>Selected Work</span>
+                </div>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Animation</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sec1-2">
+                <div class="main">
+                    <div class="main-word mw1">
+                        <p>尹</p>
+                    </div>
+                    <div class="main-word mw2">
+                        <p>善</p>
+                    </div>
+                    <div class="main-word mw3">
+                        <p>永</p>
+                    </div>
+                    <div class="time_message">
+                        <span class="time_clock">00:00:00</span>
+                        <span class="time_comment">Hey there my friend.</span>
+                    </div>
+                    <p class="greetings_left">
+                        안녕하세요. 저는 웹퍼블리셔<br>
+                        윤선영입니다.<br>
+                        만나서 반갑습니다.
+                    </p>
+                    <p class="greetings_right">
+                        Hi, my name is Yoon Seon Yeong.<br>
+                        I am a Creative Web Publisher.<br>
+                        Currently in South Korea.
+                    </p>
+                </div>
+            </div>
+        </section><!-- //section1 -->
+        <section id="section2">
+            <div class="sec2">
+                <div class="chapter ch2">
+                    <span>About Me</span>
+                </div>
+                <div class="about-wrap">
+                    <div class="about-cont">
+                        <div class="about-img"></div>
+                        <p>윤선영</p>
+                    </div>
+                    <div class="about-desc">
+                        <p>
+                            IT 트렌드에 발맞추기 위해 항상 노력하는
+                            웹퍼블리셔 윤선영입니다.
+                            추상적인 것 보다는 눈으로 변화를 즉각적으로 확인하는
+                            것을 좋아하는 저는 하얀 웹 페이지가 코딩을 통해
+                            내가 의도한대로 하나 하나 채워지는 것을 보며
+                            짜릿함을 느꼈습니다.
+                            현재 하루가 다르게 변화하는 IT 트렌드를 따라잡기 위해
+                            열심히 공부 중입니다. 그 자리에 안주하지 않고
+                            항상 공부하고 변화를 받아 들이는
+                            트렌디한 웹퍼블리셔로 성장해나가고 싶습니다.
+                        </p>
+                        <svg class="scroll-down-wrap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+                            <defs>
+                                <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle_top">
+                                    <animateTransform attributeName="transform" begin="0s" dur="20s" type="rotate" from="0 250 250" to="360 250 250" repeatCount="indefinite"></animateTransform>
+                                </path>
+                            </defs>
+                            <text class="welcom-text" dy="0" textLength="50">
+                                <textPath xlink:href="#textcircle_top">Hello! Welcome to seonyeong's Portfolio.</textPath>
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section><!-- //section2 -->
+        <section id="section3">
+            <div class="sec3-1">
+                <h2 class="ir_su">탭 메뉴</h2>
+                <h4>Currently Studying...</h4>
+                <ul>
+                    <li class="active">
+                        <a href="#">JavaScript</a>
+                        <div>
+                            <img src="assets/img/jsbook.jpg" alt="자바스크립트 책">
+                            <div class="hover_bg">
+                                <span>javascript를 공부하고 있습니다.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">React</a>
+                        <div>
+                            <img src="assets/img/reactbook.jpg" alt="리엑트 책">
+                            <div class="hover_bg">
+                                <span>react.js를 공부하고 있습니다.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Vue</a>
+                        <div>
+                            <img src="assets/img/vuebook.jpg" alt="뷰 책">
+                            <div class="hover_bg">
+                                <span>vue.js를 공부하고 있습니다.</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="sec3-2">
+                <h4>My Skills</h4>
+                <div class="skill-wrap">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- //section3 -->
+        <section id="section4">
+            <div class="sec4">
+                <h2>Index</h2>
+                <ul class="index-wrap">
+                    <li><span class="work-tit">Web Site</span>
+                        <ul>
+                            <li>Web Standard</li>
+                            <li>Responsive Web</li>
+                            <li>Megabox</li>
+                            <li>Gabia</li>
+                        </ul>
+                    </li>
+                    <li><span class="work-tit">Animation</span>
+                        <ul>
+                            <li>Text Animation</li>
+                            <li>Cube Animation</li>
+                            <li>Tail Animation</li>
+                            <li>Dots Animation</li>
+                            <li>Circle Animation</li>
+                        </ul>
+                    </li>
+                    <li><span class="work-tit">JAVASCRIPT</span>
+                        <ul>
+                            <li>Todo List</li>
+                            <li>Paint Brush</li>
+                            <li>Tic - tac - to</li>
+                            <li>Lotto</li>
+                        </ul>
+                    </li>
+                    <li><span class="work-tit">Web Site</span>
+                        <ul>
+                            <li>Web Standard</li>
+                            <li>Responsive Web</li>
+                            <li>Megabox</li>
+                            <li>Gabia</li>
+                        </ul>
+                    </li>
+                    <li><span class="work-tit">Animation</span>
+                        <ul>
+                            <li>Text Animation</li>
+                            <li>Cube Animation</li>
+                            <li>Tail Animation</li>
+                            <li>Dots Animation</li>
+                            <li>Circle Animation</li>
+                        </ul>
+                    </li>
+                    <li><span class="work-tit">JAVASCRIPT</span>
+                        <ul>
+                            <li>Todo List</li>
+                            <li>Paint Brush</li>
+                            <li>Tic - tac - to</li>
+                            <li>Lotto</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- //section4 -->
+        <section id="section5">
+            <div class="sec5-1">
+                <div class="chapter ch5">
+                    <span>Web Site</span>
+                </div>
+            </div>
+            <div class="sec5-2">
+                <div class="site s1">
+                    <div class="site-img-wrap">
+                        <p class="site-tit">Web Standard</p>
+                        <div class="site-img-frame reveal">
+                            <img class="site-img" src="assets/img/webstandard.jpg" srcset="assets/img/webstandard@2.jpg 2x, assets/img/webstandard@3.jpg 3x" alt="표준형 사이트">
+                        </div>
+                    </div>
+                    <div class="site-desc">
+                        <p>
+                            웹 표준 지침서를 준수하여 코딩한 기본 형태의 사이트입니다.<br>
+                            모든 사용자가 사용에 불편함이 없도록 웹 접근성을 고려해 코딩했습니다.<br>
+                            슬라이드 배너를 구현하기 위한 slick.js, 이미지 갤러리를
+                            구현하기 위한 lightgallery.js 등 jQuery 플러그인들을 사용하여
+                            동적 효과를 주었습니다.
+                        </p>
+                        <div class="site-btn-wrap">
+                            <a href="http://sunhtml.dothome.co.kr/webstandard/index.html" target="_blank" class="site-btn nav-link">
+                                <div class="bottom"></div>
+                                <div class="top">
+                                    <div class="label">View Site</div>
+                                    <div class="button-border button-border-left"></div>
+                                    <div class="button-border button-border-top"></div>
+                                    <div class="button-border button-border-right"></div>
+                                    <div class="button-border button-border-bottom"></div>
+                                </div>
+                            </a>
+                            <a href="http://sunhtml.dothome.co.kr/webstandard/index.html" target="_blank" class="site-btn nav-link">
+                                <div class="bottom"></div>
+                                <div class="top">
+                                    <div class="label">View Code</div>
+                                    <div class="button-border button-border-left"></div>
+                                    <div class="button-border button-border-top"></div>
+                                    <div class="button-border button-border-right"></div>
+                                    <div class="button-border button-border-bottom"></div>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="site s2">
+                    <div class="site-img-wrap">
+                        <p class="site-tit">Responsive Web</p>
+                        <div class="site-img-frame reveal">
+                            <img class="site-img" src="assets/img/responsive.jpg" srcset="assets/img/responsive@2.jpg 2x, assets/img/responsive@3.jpg 3x" alt="반응형 사이트">
+                        </div>
+                    </div>
+                    <div class="site-desc">
+                        <p>
+                            모든 사용자가 웹 사이트 이용에 불편이 없도록 웹 접근성을 고려한 반응형 사이트 입니다. 미디어쿼리를 이용하여 다양한 디바이스 환경에 맞추어 제작하였습니다.
+                            슬라이드, 탭, 동영상, 마우스오버효과를 이용하여 동적인 효과를 주었습니다.
+                        </p>
+                        <div class="site-btn-wrap">
+                            <a href="http://sunhtml.dothome.co.kr/responsive/index.html" target="_blank" class="site-btn nav-link">
+                                <div class="bottom"></div>
+                                <div class="top">
+                                    <div class="label">View Site</div>
+                                    <div class="button-border button-border-left"></div>
+                                    <div class="button-border button-border-top"></div>
+                                    <div class="button-border button-border-right"></div>
+                                    <div class="button-border button-border-bottom"></div>
+                                </div>
+                            </a>
+                            <a href="http://sunhtml.dothome.co.kr/responsive/index.html" target="_blank" class="site-btn nav-link">
+                                <div class="bottom"></div>
+                                <div class="top">
+                                    <div class="label">View Code</div>
+                                    <div class="button-border button-border-left"></div>
+                                    <div class="button-border button-border-top"></div>
+                                    <div class="button-border button-border-right"></div>
+                                    <div class="button-border button-border-bottom"></div>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="site s3">
+                    <div class="site-img-wrap">
+                        <p class="site-tit">Megabox</p>
+                        <div class="site-img-frame reveal">
+                            <img class="site-img" src="assets/img/icox.jpg" srcset="assets/img/icox@2.jpg 2x, assets/img/icox@3.jpg 3x" alt="아이콕스 사이트">
+                        </div>
+                    </div>
+                    <div class="site-desc">
+                        <p>
+                            메가박스 사이트입니다. 포토샵을 이용하여 각 디바이스 별 그리드에 맞추어 디자인하였고, 메가박스의 로고컬러를 포인트컬러로 사용하여 통일감을 주었습니다. swiper 플러그인을 이용하여 슬라이드를 제작하였고, Google Api를 이용하여 유튜브 트레일러 영상 플레이어를 활성화하였습니다.
+                        </p>
+                        <div class="site-btn-wrap">
+                            <a href="http://sunhtml.dothome.co.kr/megabox/index.html" target="_blank" class="site-btn nav-link">
+                                <div class="bottom"></div>
+                                <div class="top">
+                                    <div class="label">View Site</div>
+                                    <div class="button-border button-border-left"></div>
+                                    <div class="button-border button-border-top"></div>
+                                    <div class="button-border button-border-right"></div>
+                                    <div class="button-border button-border-bottom"></div>
+                                </div>
+                            </a>
+                            <a href="http://sunhtml.dothome.co.kr/megabox/index.html" target="_blank" class="site-btn nav-link">
+                                <div class="bottom"></div>
+                                <div class="top">
+                                    <div class="label">View Code</div>
+                                    <div class="button-border button-border-left"></div>
+                                    <div class="button-border button-border-top"></div>
+                                    <div class="button-border button-border-right"></div>
+                                    <div class="button-border button-border-bottom"></div>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="site s4">
+                    <div class="site-img-wrap">
+                        <p class="site-tit">Icox</p>
+                        <div class="site-img-frame reveal">
+                            <img class="site-img" src="assets/img/icox.jpg" srcset="assets/img/icox@2.jpg 2x, assets/img/icox@3.jpg 3x" alt="아이콕스 사이트">
+                        </div>
+                    </div>
+                    <div class="site-desc">
+                        <p>
+                            아이콕스 출판사 사이트를 구현하였습니다. skip 기법 등을 사용하여 섹션별 명칭을 표기해주어 웹접근성을 준수하려고 노력했습니다. 반응형 사이트로 제작하여 디바이스 별로 가독성이 높은 레이아웃으로 만들었습니다. 슬라이드 배너를 구현하기 위한 slick.js 등 jQuery 플러그인들을 사용하여 동적 효과를 주었습니다.
+                        </p>
+                        <div class="site-btn-wrap">
+                            <a href="http://sunhtml.dothome.co.kr/icox/icox.html" target="_blank" class="site-btn nav-link">
+                                <div class="bottom"></div>
+                                <div class="top">
+                                    <div class="label">View Site</div>
+                                    <div class="button-border button-border-left"></div>
+                                    <div class="button-border button-border-top"></div>
+                                    <div class="button-border button-border-right"></div>
+                                    <div class="button-border button-border-bottom"></div>
+                                </div>
+                            </a>
+                            <a href="http://sunhtml.dothome.co.kr/icox/icox.html" target="_blank" class="site-btn nav-link">
+                                <div class="bottom"></div>
+                                <div class="top">
+                                    <div class="label">View Code</div>
+                                    <div class="button-border button-border-left"></div>
+                                    <div class="button-border button-border-top"></div>
+                                    <div class="button-border button-border-right"></div>
+                                    <div class="button-border button-border-bottom"></div>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="site s5">
+                    <div class="site-img-wrap">
+                        <p class="site-tit">Portfolio</p>
+                        <div class="site-img-frame reveal">
+                            <img class="site-img" src="assets/img/port1.jpg" srcset="assets/img/port1@2.jpg 2x, assets/img/responsive@3.jpg 3x" alt="포트폴리오1">
+                        </div>
+                    </div>
+                    <div class="site-desc">
+                        <p>
+                            웹 표준 지침서를 준수하여 코딩한 기본 형태의 사이트입니다.<br>
+                            모든 사용자가 사용에 불편함이 없도록 웹 접근성을 고려해 코딩했습니다.<br>
+                            슬라이드 배너를 구현하기 위한 slick.js, 이미지 갤러리를
+                            구현하기 위한 lightgallery.js 등 jQuery 플러그인들을 사용하여
+                            동적 효과를 주었습니다.
+                        </p>
+                        <div class="site-btn-wrap">
+                            <a href="http://sunywork.dothome.co.kr/port/index1.html" target="_blank" class="site-btn nav-link">
+                                <div class="bottom"></div>
+                                <div class="top">
+                                    <div class="label">View Site</div>
+                                    <div class="button-border button-border-left"></div>
+                                    <div class="button-border button-border-top"></div>
+                                    <div class="button-border button-border-right"></div>
+                                    <div class="button-border button-border-bottom"></div>
+                                </div>
+                            </a>
+                            <a href="http://sunywork.dothome.co.kr/port/index1.html" target="_blank" class="site-btn nav-link">
+                                <div class="bottom"></div>
+                                <div class="top">
+                                    <div class="label">View Code</div>
+                                    <div class="button-border button-border-left"></div>
+                                    <div class="button-border button-border-top"></div>
+                                    <div class="button-border button-border-right"></div>
+                                    <div class="button-border button-border-bottom"></div>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="site s6">
+                    <div class="site-img-wrap">
+                        <p class="site-tit">Apple Music</p>
+                        <div class="site-img-frame reveal">
+                            <img class="site-img" src="assets/img/applemusic.jpg" srcset="assets/img/applemusic@2.jpg 2x, assets/img/responsive@3.jpg 3x" alt="반응형 사이트">
+                        </div>
+                    </div>
+                    <div class="site-desc">
+                        <p>
+                            웹 표준 지침서를 준수하여 코딩한 기본 형태의 사이트입니다.<br>
+                            모든 사용자가 사용에 불편함이 없도록 웹 접근성을 고려해 코딩했습니다.<br>
+                            슬라이드 배너를 구현하기 위한 slick.js, 이미지 갤러리를
+                            구현하기 위한 lightgallery.js 등 jQuery 플러그인들을 사용하여
+                            동적 효과를 주었습니다.
+                        </p>
+                        <div class="site-btn-wrap">
+                            <a href="https://seonyeongyoon.github.io/apple/apple02.html" target="_blank" class="site-btn nav-link">
+                                <div class="bottom"></div>
+                                <div class="top">
+                                    <div class="label">View Site</div>
+                                    <div class="button-border button-border-left"></div>
+                                    <div class="button-border button-border-top"></div>
+                                    <div class="button-border button-border-right"></div>
+                                    <div class="button-border button-border-bottom"></div>
+                                </div>
+                            </a>
+                            <a href="https://seonyeongyoon.github.io/apple/apple02.html" target="_blank" class="site-btn nav-link">
+                                <div class="bottom"></div>
+                                <div class="top">
+                                    <div class="label">View Code</div>
+                                    <div class="button-border button-border-left"></div>
+                                    <div class="button-border button-border-top"></div>
+                                    <div class="button-border button-border-right"></div>
+                                    <div class="button-border button-border-bottom"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section5 -->
+        <section id="section6">
+            <div class="sec6-1">
+                <div class="chapter ch6">
+                    <span>Animation</span>
+                </div>
+            </div>
+            <div class="sec6-2">
+                <div class="ani ani1">
+                    <div><iframe src="assets/animation/ani1.html" frameborder="0"></iframe></div>
+                    <div class="ani-desc">
+                        <h3>Tail Animation</h3>
+                        <p>CSS 효과를 이용한 TAIL 애니메이션 입니다.
+                            DIV 요소를 만든 후 각각의 CLASS에 맞게 CSS효과를 적용했습니다.
+                            또한, KEYFRAMES 이용하여 역동적인 애니메이션 효과를 주었습니다.</p>
+                        <button>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="ani ani2">
+                    <div><iframe src="assets/animation/ani2.html" frameborder="0"></iframe></div>
+                    <div class="ani-desc">
+                        <h3>Cube Animation</h3>
+                        <p>정육면체를 6개의 DIV로 나누어 DIV마다 회전, 크기 변화 애니메이션을 주었습니다.</p>
+                        <button>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="ani ani3">
+                    <div><iframe src="assets/animation/ani3.html" frameborder="0"></iframe></div>
+                    <div class="ani-desc">
+                        <h3>Tail Animation</h3>
+                        <p>CSS 효과를 이용한 TAIL 애니메이션 입니다.
+                            DIV 요소를 만든 후 각각의 CLASS에 맞게 CSS효과를 적용했습니다.
+                            또한, KEYFRAMES 이용하여 역동적인 애니메이션 효과를 주었습니다.</p>
+                        <button>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="ani ani4">
+                    <div><iframe src="assets/animation/ani4.html" frameborder="0"></iframe></div>
+                    <div class="ani-desc">
+                        <h3>Dots Animation</h3>
+                        <p>3개의 원이 합쳐진 원 6개를 삼각형 구조로 배치 후 KEYFRAMES를 이용하여 회전 애니메이션 효과를 주었습니다.</p>
+                        <button>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="ani ani5">
+                    <div><iframe src="assets/animation/ani5.html" frameborder="0"></iframe></div>
+                    <div class="ani-desc">
+                        <h3>Circle Animation</h3>
+                        <p>6개의 면마다 TRANSFORM ROTATE을 주어 합쳤을 때 원 모양을 나타내도록 하였으며 KEYFRAMES를 이용하여 시간이 지날 때마다 다른 각도로 회전할 수 있도록 하였습니다.</p>
+                        <button>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section6 -->
+        <section id="section7">
+            <div class="sec7-1">
+                <div class="chapter ch7">
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            <div class="sec7-2">
+                <div class="js-main">
+                    <div class="js-main-word mw1">
+                        <p>윤</p>
+                    </div>
+                    <div class="js-main-word mw2">
+                        <p>선</p>
+                    </div>
+                    <div class="js-main-word mw3">
+                        <p>영</p>
+                    </div>
+                    <div class="js-message">
+                        <div>
+                            <span>프론트엔드개발자 꿈나무 윤선영입니다.</span>
+                            <span>제 포트폴리오를 보러 오신 것을 환영합니다.</span>
+                        </div>
+                    </div>
+                    <p class="js-greetings_left">
+                        안녕하세요.<br>저는 프론트엔드 개발자<br>
+                        윤선영입니다.<br>
+                        만나서 반갑습니다.
+                    </p>
+                    <p class="js-greetings_right">
+                        Hi, my name is Yoon Seon Yeong.<br>
+                        I am a Front-end developer.<br>
+                        Currently in South Korea.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <!-- //section7 -->
+        <section id="section8">
+            <div class="sec8">
+                <!--<div class="chapter ch8">
+                    <span>About Me</span>
+                </div>-->
+                <div class="about-wrap js">
+                    <div class="about-cont js">
+                        <div class="about-img js"></div>
+                        <p>윤선영</p>
+                    </div>
+                    <div class="about-desc js">
+                        <p>
+                            안녕하세요. 프론트엔드개발자를 꿈꾸는 윤선영입니다.
+                            웹사이트 구축을 공부해오면서 HTML, CSS를 이용한 마크업 뿐만 아니라
+                            보다 동적인 표현을 더해주고 웹페이지 요소 제어를 위해 필요한 JavaScript를 접하였습니다.<br>JavaScript를 공부하며 보다 짧은 코드로 기능을 구현할 수 있는 최적화 방법에 대해 고민했습니다.
+                             현재 React.js 와 Vue.js를 공부 중입니다. 보다 다양한 언어들을 숙지하며 언어들의 장점을 적극 활용하여 웹을 제작하는 프론트엔드 개발자로 거듭나겠습니다.<br>
+                            다음은 제가 JavaScript를 공부하며 만들어보았던 몇가지 앱과 게임들을 담아보았습니다.
+                        </p>
+                        <svg class="scroll-down-wrap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+                            <defs>
+                                <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle_top">
+                                    <animateTransform attributeName="transform" begin="0s" dur="20s" type="rotate" from="0 250 250" to="360 250 250" repeatCount="indefinite"></animateTransform>
+                                </path>
+                            </defs>
+                            <text class="welcom-text" dy="0" textLength="50">
+                                <textPath xlink:href="#textcircle_top">Hello! Welcome to seonyeong's Portfolio.</textPath>
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section9">
+            <div class="js js1">
+                <div class="js-img-wrap">
+                    <div class="js-img">
+                        <iframe src="assets/jswork/todo/index.html" frameborder="0"></iframe>
+                        <div class="code-box">
+                            <pre class="line-numbers language-js">
+<code class="language-js">const toDoForm = document.querySelector(".js-toDoForm"),
+toDoInput = toDoForm.querySelector("input"),
+toDoList = document.querySelector(".js-toDoList");
+
+const TODOS_LS = "toDos";  
+
+function filterFn(toDo){
+return toDo.id === 1
+}
+
+let toDos = [];
+
+function deleteToDo(event) {
+const btn = event.target;
+const li = btn.parentNode;
+toDoList.removeChild(li);
+const cleanToDos = toDos.filter(function(toDo){
+console.log(toDo.id, li.id);
+return toDo.id !== parseInt(li.id);
+});
+
+toDos = cleanToDos
+saveToDos();
+}
+
+
+function saveToDos(){
+localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
+}
+
+function paintToDo(text){
+const li = document.createElement("li");
+const delBtn = document.createElement("button");
+const span = document.createElement("span");
+const newId = toDos.length + 1;
+delBtn.innerHTML = "❌";
+delBtn.addEventListener("click", deleteToDo);
+span.innerText = text;
+li.appendChild(delBtn);
+li.appendChild(span);
+li.id = newId;
+toDoList.appendChild(li);
+const toDoObj = {
+text: text,
+id: newId
+};
+toDos.push(toDoObj);
+saveToDos();
+}
+
+function handleSubmit(event){
+event.preventDefault();
+const currentValue = toDoInput.value;
+paintToDo(currentValue);
+toDoInput.value = "";
+}
+
+
+
+function loadToDos(){
+const loadedToDos = localStorage.getItem(TODOS_LS);
+if (loadedToDos !== null){
+const parsedToDos = JSON.parse(loadedToDos);
+parsedToDos.forEach(function (toDo) {
+paintToDo(toDo.text); 
+});
+} 
+}    
+
+function init() {
+loadToDos();
+toDoForm.addEventListener("submit", handleSubmit)
+}
+
+init();
+</code>
+</pre>
+                        </div>
+                        <h1>01</h1>
+                    </div>
+                    <div class="js-desc">
+                        <div class="js-tit-wrap">
+                            <h2 class="js-tit">TO&nbsp;DO&nbsp;LIST</h2>
+                            <button class="code-btn">&lt;/View Code&gt;</button>
+                        </div>
+                        <P>현재 시간, 날씨를 보여주고 일정을 저장할 수 있는 앱입니다.
+                        </P>
+                    </div>
+                </div>
+            </div>
+            <div class="js js2">
+                <div class="js-img-wrap">
+                    <div class="js-img">
+                        <iframe src="assets/jswork/paintjs/index.html" frameborder="0"></iframe>
+                        <div class="code-box">
+                            <pre class="line-numbers language-js">
+<code class="language-js">const toDoForm = document.querySelector(".js-toDoForm"),
+toDoInput = toDoForm.querySelector("input"),
+toDoList = document.querySelector(".js-toDoList");
+
+const TODOS_LS = "toDos";  
+
+function filterFn(toDo){
+return toDo.id === 1
+}
+
+let toDos = [];
+
+function deleteToDo(event) {
+const btn = event.target;
+const li = btn.parentNode;
+toDoList.removeChild(li);
+const cleanToDos = toDos.filter(function(toDo){
+console.log(toDo.id, li.id);
+return toDo.id !== parseInt(li.id);
+});
+
+toDos = cleanToDos
+saveToDos();
+}
+
+
+function saveToDos(){
+localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
+}
+
+function paintToDo(text){
+const li = document.createElement("li");
+const delBtn = document.createElement("button");
+const span = document.createElement("span");
+const newId = toDos.length + 1;
+delBtn.innerHTML = "❌";
+delBtn.addEventListener("click", deleteToDo);
+span.innerText = text;
+li.appendChild(delBtn);
+li.appendChild(span);
+li.id = newId;
+toDoList.appendChild(li);
+const toDoObj = {
+text: text,
+id: newId
+};
+toDos.push(toDoObj);
+saveToDos();
+}
+
+function handleSubmit(event){
+event.preventDefault();
+const currentValue = toDoInput.value;
+paintToDo(currentValue);
+toDoInput.value = "";
+}
+
+
+
+function loadToDos(){
+const loadedToDos = localStorage.getItem(TODOS_LS);
+if (loadedToDos !== null){
+const parsedToDos = JSON.parse(loadedToDos);
+parsedToDos.forEach(function (toDo) {
+paintToDo(toDo.text); 
+});
+} 
+}    
+
+function init() {
+loadToDos();
+toDoForm.addEventListener("submit", handleSubmit)
+}
+
+init();
+</code>
+</pre>
+                        </div>
+                        <h1>02</h1>
+                    </div>
+                    <div class="js-desc">
+                        <div class="js-tit-wrap">
+                            <h2 class="js-tit">PAINT&nbsp;BRUSH</h2>
+                            <button class="code-btn">&lt;/View Code&gt;</button>
+                        </div>
+                        <P>현재 시간, 날씨를 보여주고 일정을 저장할 수 있는 앱입니다.
+                        </P>
+                    </div>
+                </div>
+            </div>
+            <div class="js js3">
+                <div class="js-img-wrap">
+                    <div class="js-img">
+                        <iframe src="assets/jswork/tictecto/tictecto.html" frameborder="0"></iframe>
+                        <div class="code-box">
+                            <pre class="line-numbers language-js">
+<code class="language-js">const toDoForm = document.querySelector(".js-toDoForm"),
+toDoInput = toDoForm.querySelector("input"),
+toDoList = document.querySelector(".js-toDoList");
+
+const TODOS_LS = "toDos";  
+
+function filterFn(toDo){
+return toDo.id === 1
+}
+
+let toDos = [];
+
+function deleteToDo(event) {
+const btn = event.target;
+const li = btn.parentNode;
+toDoList.removeChild(li);
+const cleanToDos = toDos.filter(function(toDo){
+console.log(toDo.id, li.id);
+return toDo.id !== parseInt(li.id);
+});
+
+toDos = cleanToDos
+saveToDos();
+}
+
+
+function saveToDos(){
+localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
+}
+
+function paintToDo(text){
+const li = document.createElement("li");
+const delBtn = document.createElement("button");
+const span = document.createElement("span");
+const newId = toDos.length + 1;
+delBtn.innerHTML = "❌";
+delBtn.addEventListener("click", deleteToDo);
+span.innerText = text;
+li.appendChild(delBtn);
+li.appendChild(span);
+li.id = newId;
+toDoList.appendChild(li);
+const toDoObj = {
+text: text,
+id: newId
+};
+toDos.push(toDoObj);
+saveToDos();
+}
+
+function handleSubmit(event){
+event.preventDefault();
+const currentValue = toDoInput.value;
+paintToDo(currentValue);
+toDoInput.value = "";
+}
+
+
+
+function loadToDos(){
+const loadedToDos = localStorage.getItem(TODOS_LS);
+if (loadedToDos !== null){
+const parsedToDos = JSON.parse(loadedToDos);
+parsedToDos.forEach(function (toDo) {
+paintToDo(toDo.text); 
+});
+} 
+}    
+
+function init() {
+loadToDos();
+toDoForm.addEventListener("submit", handleSubmit)
+}
+
+init();
+</code>
+</pre>
+                        </div>
+                        <h1>03</h1>
+                    </div>
+                    <div class="js-desc">
+                        <div class="js-tit-wrap">
+                            <h2 class="js-tit">TIC-TEC-TO</h2>
+                            <button class="code-btn">&lt;/View Code&gt;</button>
+                        </div>
+                        <P>현재 시간, 날씨를 보여주고 일정을 저장할 수 있는 앱입니다.
+                        </P>
+                    </div>
+                </div>
+            </div>
+            <div class="js js4">
+                <div class="js-img-wrap">
+                    <div class="js-img">
+                        <iframe src="assets/jswork/todo/index.html" frameborder="0"></iframe>
+                        <div class="code-box">
+                            <pre class="line-numbers language-js">
+<code class="language-js">const toDoForm = document.querySelector(".js-toDoForm"),
+toDoInput = toDoForm.querySelector("input"),
+toDoList = document.querySelector(".js-toDoList");
+
+const TODOS_LS = "toDos";  
+
+function filterFn(toDo){
+return toDo.id === 1
+}
+
+let toDos = [];
+
+function deleteToDo(event) {
+const btn = event.target;
+const li = btn.parentNode;
+toDoList.removeChild(li);
+const cleanToDos = toDos.filter(function(toDo){
+console.log(toDo.id, li.id);
+return toDo.id !== parseInt(li.id);
+});
+
+toDos = cleanToDos
+saveToDos();
+}
+
+
+function saveToDos(){
+localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
+}
+
+function paintToDo(text){
+const li = document.createElement("li");
+const delBtn = document.createElement("button");
+const span = document.createElement("span");
+const newId = toDos.length + 1;
+delBtn.innerHTML = "❌";
+delBtn.addEventListener("click", deleteToDo);
+span.innerText = text;
+li.appendChild(delBtn);
+li.appendChild(span);
+li.id = newId;
+toDoList.appendChild(li);
+const toDoObj = {
+text: text,
+id: newId
+};
+toDos.push(toDoObj);
+saveToDos();
+}
+
+function handleSubmit(event){
+event.preventDefault();
+const currentValue = toDoInput.value;
+paintToDo(currentValue);
+toDoInput.value = "";
+}
+
+
+
+function loadToDos(){
+const loadedToDos = localStorage.getItem(TODOS_LS);
+if (loadedToDos !== null){
+const parsedToDos = JSON.parse(loadedToDos);
+parsedToDos.forEach(function (toDo) {
+paintToDo(toDo.text); 
+});
+} 
+}    
+
+function init() {
+loadToDos();
+toDoForm.addEventListener("submit", handleSubmit)
+}
+
+init();
+</code>
+</pre>
+                        </div>
+                        <h1>04</h1>
+                    </div>
+                    <div class="js-desc">
+                        <div class="js-tit-wrap">
+                            <h2 class="js-tit">LOTTO</h2>
+                            <button class="code-btn">&lt;/View Code&gt;</button>
+                        </div>
+                        <P>현재 시간, 날씨를 보여주고 일정을 저장할 수 있는 앱입니다.
+                        </P>
+                    </div>
+                </div>
+            </div>
+            <div class="js js5">
+                <div class="js-img-wrap">
+                    <div class="js-img">
+                        <iframe src="assets/jswork/todo/index.html" frameborder="0"></iframe>
+                        <div class="code-box">
+                            <pre class="line-numbers language-js">
+<code class="language-js">const toDoForm = document.querySelector(".js-toDoForm"),
+toDoInput = toDoForm.querySelector("input"),
+toDoList = document.querySelector(".js-toDoList");
+
+const TODOS_LS = "toDos";  
+
+function filterFn(toDo){
+return toDo.id === 1
+}
+
+let toDos = [];
+
+function deleteToDo(event) {
+const btn = event.target;
+const li = btn.parentNode;
+toDoList.removeChild(li);
+const cleanToDos = toDos.filter(function(toDo){
+console.log(toDo.id, li.id);
+return toDo.id !== parseInt(li.id);
+});
+
+toDos = cleanToDos
+saveToDos();
+}
+
+
+function saveToDos(){
+localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
+}
+
+function paintToDo(text){
+const li = document.createElement("li");
+const delBtn = document.createElement("button");
+const span = document.createElement("span");
+const newId = toDos.length + 1;
+delBtn.innerHTML = "❌";
+delBtn.addEventListener("click", deleteToDo);
+span.innerText = text;
+li.appendChild(delBtn);
+li.appendChild(span);
+li.id = newId;
+toDoList.appendChild(li);
+const toDoObj = {
+text: text,
+id: newId
+};
+toDos.push(toDoObj);
+saveToDos();
+}
+
+function handleSubmit(event){
+event.preventDefault();
+const currentValue = toDoInput.value;
+paintToDo(currentValue);
+toDoInput.value = "";
+}
+
+
+
+function loadToDos(){
+const loadedToDos = localStorage.getItem(TODOS_LS);
+if (loadedToDos !== null){
+const parsedToDos = JSON.parse(loadedToDos);
+parsedToDos.forEach(function (toDo) {
+paintToDo(toDo.text); 
+});
+} 
+}    
+
+function init() {
+loadToDos();
+toDoForm.addEventListener("submit", handleSubmit)
+}
+
+init();
+</code>
+</pre>
+                        </div>
+                        <h1>05</h1>
+                    </div>
+                    <div class="js-desc">
+                        <div class="js-tit-wrap">
+                            <h2 class="js-tit">Minescreeper</h2>
+                            <button class="code-btn">&lt;/View Code&gt;</button>
+                        </div>
+                        <P>현재 시간, 날씨를 보여주고 일정을 저장할 수 있는 앱입니다.
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section9 -->
+        <section id="section10">
+            <div class="sec10-1">
+                <div class="chapter ch10">
+                    <span>Contact</span>
+                </div>
+            </div>
+            <div class="sec10-2">
+                <div class="address">
+                    <p>Thank you!😀</p>
+                    <ul>
+                        <li>Please Contact Me</li>
+                        <li>Phone : 010 - 4302 - 0048</li>
+                        <li>E - mail : sun940204@naver.com</li>
+                    </ul>
+                </div>
+                <div class="message">
+                    <form action="post">
+                        <fieldset>
+                            <input class="name" type="text" name="name" placeholder="Your Name">
+                            <input class="email" type="text" name="email" placeholder="Your Email">
+                            <textarea name="message" class="msg" cols="30" rows="10" placeholder="Leave a Meassage"></textarea>
+                            <input type="button" name="submit" class="send" value="SEND">
+                                <img class="arrow-hover" src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-paper-plane-1-120.png?raw=true" />
+                        </fieldset>
+                    </form>
+                </div>
+
+            </div>
+            <p class="goback">wanna go back to the top?</p>
+        </section>
+        <!-- //section10 -->
+    </main>
+    <!-- //contents -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="assets/js/prism.js"></script>
+    <script src="assets/js/main1.js"></script>
+    <script>
+        /* mouse cursor */
+        //Javascript + GSAP
+        const cursor = document.querySelector(".cursor");
+        const follower = document.querySelector(".cursor-follower");
+
+        //움직임 효과
+        document.addEventListener("mousemove", function(e) {
+            gsap.to(cursor, {
+                duration: 0.3,
+                left: e.pageX - 5,
+                top: e.pageY - 5
+            });
+            gsap.to(follower, {
+                duration: 0.8,
+                left: e.pageX - 15,
+                top: e.pageY - 15
+            });
+        });
+    </script>
+</body>
+
+</html>

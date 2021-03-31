@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+            width: 100vw;
+            height: 100vh;    
+            margin: 0;
+            padding: 0;
+        }
+
+        svg {
+            font-family: 'Noto Serif TC', serif;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        svg text {
+            text-transform: uppercase;
+            font-size: 60vw;
+            font-weight: bold;
+            animation: stroke 5s infinite alternate;
+        }
+
+        @keyframes stroke {
+            0% {
+                fill: rgba(161, 64, 222, 0);
+                stroke:  rgba(161, 64, 222, 1);
+                stroke-dashoffset: 25%;
+                stroke-dasharray: 0 50%;
+                stroke-width: 2;
+            }
+
+            70% {
+                fill: rgba(161, 64, 222, 0);
+                stroke: rgba(161, 64, 222, 1);
+            }
+
+            80% {
+                fill: rgba(161, 64, 222, 0);
+                stroke: rgba(161, 64, 222, 1);
+                stroke-width: 3;
+            }
+
+            100% {
+                fill: rgba(161, 64, 222, 1);
+                stroke: rgba(161, 64, 222, 0);
+                stroke-dashoffset: -25%;
+                stroke-dasharray: 50% 0;
+                stroke-width: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <svg viewBox="0 0 1320 300">
+        <text x="50%" y="50%" dy="40px" text-anchor="middle">seonyeong</text>
+    </svg>
+</body>
+
+</html>

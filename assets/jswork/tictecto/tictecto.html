@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>틱택토</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #e0e5ec;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        table {
+            width: 40vw;
+            height: 40vw;
+            /*background: url('pinksea_bg.png') center no-repeat;*/
+            background-color: #e0e5ec;
+            border-collapse: collapse;
+            box-shadow: -8px -8px 16px -10px rgb(255 255 255), 8px 8px 16px -10px rgb(0 0 0 / 15%);
+            color: #bbb;
+        }
+
+        tr {
+            /*border-bottom: 1px solid #fff;*/
+            box-shadow: -4px -4px 10px -8px rgb(255 255 255), 4px 4px 10px -8px rgb(0 0 0 / 30%);
+        }
+
+        tr:nth-child(3) {
+            border-bottom: none;
+        }
+
+        td {
+            /*border-right: 1px solid #fff;*/
+            width: 33.33%;
+            height: 25%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+            box-shadow: -4px -4px 10px -8px rgb(255 255 255), 4px 4px 10px -8px rgb(0 0 0 / 30%);
+        }
+
+        tr td:nth-child(3) {
+            border-right: none;
+        }
+
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table> -->
+    <script src="tictecto.js"></script>
+</body>
+
+</html>
