@@ -8,7 +8,6 @@ function loading() {
         imgLoaded = 0,
         imgCurrent = 0,
         progressTimer = setInterval(updateProgress, 800 / 60);
-
     imgLoad.on("progress", function () {
         imgLoaded++;
     })
@@ -338,7 +337,6 @@ $(window).scroll(function () {
     }
     let chapter = document.querySelectorAll(".chapter");
     for (let i = 0; i < chapter.length; i++) {
-        
         if (chapter[i].getBoundingClientRect().left - window.innerWidth / 2 <= 0) {
             let ch = chapter[i].childNodes;
             let tl_ch = gsap.timeline();
