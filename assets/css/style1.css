@@ -922,7 +922,7 @@ section {
 }
 
 .site .site-desc {
-    width: 70vh;
+    width: 65vh;
     height: 80vh;
     opacity: 0;
     transform: translateY(50px);
