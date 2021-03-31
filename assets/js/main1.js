@@ -337,8 +337,9 @@ $(window).scroll(function () {
         })
     }
     let chapter = document.querySelectorAll(".chapter");
-    let ch = chapter[i].childNodes;
+    
     for (let i = 0; i < chapter.length; i++) {
+        let ch = chapter[i].childNodes;
         if (chapter[i].getBoundingClientRect().left - window.innerWidth / 2 <= 0) {
             let tl_ch = gsap.timeline();
             tl_ch.to(chapter[i], {
