@@ -61,7 +61,7 @@ function loading() {
                     duration: 0.3,
                     opacity: 1
                 });
-                tl.to(".ch1 > p span", {
+                tl.to(".chapter > p span", {
                     duration: 0.4,
                     opacity: 1,
                     y: 0,
