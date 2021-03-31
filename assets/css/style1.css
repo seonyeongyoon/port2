@@ -1524,14 +1524,15 @@ section {
     position: absolute;
     content: '';
     height: 1px;
-    width: 0%;
     background: #333;
     left: 0;
     bottom: 0;
+    animation: border-bottom 3s linear;
+    opacity: 0;
 }
 .sec10-2.show .address li:nth-child(2)::after,
 .sec10-2.show .address li:nth-child(3)::after{
-    animation: border-bottom 3s linear;
+   opacity: 1;
 }
 @keyframes border-bottom {
     0%{
