@@ -281,12 +281,14 @@ section {
 }
 .chapter > span {
     font-family: 'Ibarra Real Nova', serif;
+    
+}
+.chapter > span span {
     opacity: 0;
     transform: translateY(20px);
 }
 .ch1 > span {
     margin-bottom: 3vh;
-    
 }
 
 .ch1 span:first-child {
