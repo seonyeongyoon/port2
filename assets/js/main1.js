@@ -197,6 +197,7 @@ window.addEventListener("scroll", () => {
     let offset3 = document.getElementById("section3");
     let offset7 = document.getElementById("section7").offsetLeft;
     let offset8 = document.getElementById("section8");
+    let offset10 = document.getElementById("section10");
     document.getElementById("contents").style.left = -scrollYoffset + "px";
     if (scrollYoffset > offset2) {
         document.querySelector(".about-img").style.filter = `grayscale(0)`;
@@ -211,6 +212,9 @@ window.addEventListener("scroll", () => {
         document.querySelector(".about-img.js").style.filter = `grayscale(0)`;
     } else {
         document.querySelector(".about-img.js").style.filter = `grayscale(1)`;
+    }
+     if (offset10.getBoundingClientRect().left - window.innerWidth / 2 <= 0) {
+        document.querySelector(".sec10-2").classList.add("show");
     }
 
 })

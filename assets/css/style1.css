@@ -1523,10 +1523,22 @@ section {
     position: absolute;
     content: '';
     height: 1px;
-    width: 100%;
+    width: 0%;
     background: #333;
     left: 0;
     bottom: 0;
+}
+.sec10-2.show .address li:nth-child(2)::after,
+.sec10-2.show .address li:nth-child(3)::after{
+    animation: border-bottom 3s linear;
+}
+@keyframes border-bottom {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
 }
 .sec10-2 fieldset {
     display: flex;
