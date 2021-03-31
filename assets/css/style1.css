@@ -872,7 +872,7 @@ section {
 .site.s3 .site-tit::before {
     content: '메가박스 사이트';
     transform: rotate(90deg);
-    bottom: 5vh;
+    bottom: 6vh;
     left: -4vh;
     writing-mode: horizontal-tb;
 }
