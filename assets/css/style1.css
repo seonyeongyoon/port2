@@ -279,24 +279,24 @@ section {
     background: #333;
     
 }
-.chapter > span {
+.chapter > p {
     font-family: 'Ibarra Real Nova', serif;
     
 }
-.chapter > span span {
+.chapter > p span {
     opacity: 0;
     transform: translateY(20px);
 }
-.ch1 > span {
+.ch1 > p {
     margin-bottom: 3vh;
 }
 
-.ch1 span:first-child {
+.ch1 > p:first-child {
     position: relative;
 }
 
-.ch1 span:first-child::before,
-.ch1 span:first-child::after {
+.ch1 > p:first-child::before,
+.ch1 > p:first-child::after {
     position: absolute;
     content: '';
     bottom: -1.6vh;
@@ -306,11 +306,11 @@ section {
     background: rgba(51, 51, 51, 0.5);
 }
 
-.ch1 span:first-child::before {
+.ch1 > p:first-child::before {
     transform: rotate(45deg);
 }
 
-.ch1 span:first-child::after {
+.ch1 > p:first-child::after {
     transform: rotate(-45deg);
 }
 

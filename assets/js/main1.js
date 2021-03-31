@@ -336,7 +336,7 @@ $(window).scroll(function () {
         })
     }
     let chapter = document.querySelectorAll(".chapter");
-    let chapterSplit = document.querySelectorAll(".chapter > span");
+    let chapterSplit = document.querySelectorAll(".chapter > p");
     for (let i = 0; i < chapter.length; i++) {
         if (chapter[i].getBoundingClientRect().left - window.innerWidth / 2 <= 0) {
             let ch = chapterSplit[i].childNodes;
