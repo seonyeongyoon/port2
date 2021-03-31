@@ -281,6 +281,7 @@ section {
 }
 .chapter > p {
     font-family: 'Ibarra Real Nova', serif;
+    display: inline;
     
 }
 .chapter > p span {
