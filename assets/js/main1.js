@@ -336,15 +336,15 @@ $(window).scroll(function () {
         })
     }
     let chapter = document.querySelectorAll(".chapter");
-    let ch = document.querySelectorAll(".chapter > span");
+    let ch = chapter[i].childNodes;
     for (let i = 0; i < chapter.length; i++) {
-        if (ch[i].getBoundingClientRect().left - window.innerWidth / 2 <= 0) {
+        if (chapter[i].getBoundingClientRect().left - window.innerWidth / 2 <= 0) {
             let tl_ch = gsap.timeline();
             tl_ch.to(chapter[i], {
                 duration: 0.5,
                 opacity: 1,
             })
-            tl_ch.to(ch[i], {
+            tl_ch.to(ch, {
                 duration: 0.6,
                 opacity: 1,
                 y: 0,
