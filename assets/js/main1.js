@@ -213,7 +213,7 @@ window.addEventListener("scroll", () => {
     } else {
         document.querySelector(".about-img.js").style.filter = `grayscale(1)`;
     }
-     if (offset10.getBoundingClientRect().left - window.innerWidth / 2 <= 0) {
+     if (offset10.getBoundingClientRect().left - window.innerWidth <= 0) {
         document.querySelector(".sec10-2").classList.add("show");
     }
 
@@ -351,11 +351,11 @@ $(window).scroll(function () {
     for (let i = 0; i < chapter.length; i++) {
         if (chapter[i].getBoundingClientRect().left - window.innerWidth / 2 <= 0) {
             let tl_ch = gsap.timeline();
-            tl_ch.to(chapter[i], {
+            tl_ch.to(".chapter", {
                 duration: 0.3,
                 opacity: 1,
             })
-            tl_ch.to(chapterSplit[i], {
+            tl_ch.to(".chapter > p span", {
                 duration: 0.4,
                 opacity: 1,
                 y: 0,
