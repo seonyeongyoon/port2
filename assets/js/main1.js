@@ -271,7 +271,6 @@ $(window).scroll(function () {
     let offset5_1 = $("#section5 .site.s1").offset().left + 500;
     let offset5_2 = $("#section5 .site.s2").offset().left + 500;
     let offset5_3 = $("#section5 .site.s3").offset().left + 500;
-    let offset5_4 = $("#section5 .site.s4").offset().left + 500;
     let offset5_5 = $("#section5 .site.s5").offset().left + 500;
     let offset8 = $("#section8").offset().left;
     let offset9_1 = $("#section9 .js.js1").offset().left;
